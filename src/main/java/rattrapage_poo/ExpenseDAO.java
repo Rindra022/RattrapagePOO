@@ -10,7 +10,7 @@ public class ExpenseDAO {
 
 
     public void addExpense(RefundableExpense refundableExpense){
-        if(refundableExpense.refunded())
+        if(!refundableExpense.refunded())
             listExpenseRefund.add(refundableExpense);
     }
 
